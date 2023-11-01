@@ -1,0 +1,26 @@
+{
+  "name": "deel-e2e-test-automation",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "@wdio/cli": "^7.19.7",
+    "@wdio/local-runner": "^7.19.7",
+    "@wdio/mocha-framework": "^7.19.7",
+    "@wdio/spec-reporter": "^7.19.7",
+    "babel-eslint": "^8.2.6",
+    "chai": "^4.3.6",
+    "chromedriver": "118.0.0",
+    "eslint": "^8.28.0",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-mocha": "^6.3.0",
+    "eslint-watch": "^7.0.0",
+    "wdio-chromedriver-service": "^8.0.0",
+    "wdio-eslinter-service": "0.0.2",
+    "webdriverio": "^7.6.0"
+  },
+  "scripts": {
+    "local": "ENV=local wdio ./config/local.conf.js",
+    "ci": "ENV=ci wdio ./config/ci.conf.js",
+    "lint": "npx eslint ./"
+  }
+}
